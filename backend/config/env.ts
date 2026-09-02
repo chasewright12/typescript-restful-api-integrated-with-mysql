@@ -1,0 +1,1 @@
+// .env file for environment variables in the backend of the RESTful API project

@@ -1,0 +1,1 @@
+import UserController  from '../controller/userController';
