@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 import environment, { Environment } from '../environment';
-import { AppError } from './server/http/app_error.utils';
-import { HttpCode } from './server/http/http-code.utils';
-import { logger } from '../logger';
+import { AppError } from '../server/http/app_error.utils';
+import { HttpCode } from '../server/http/http-code.utils';
+// import { logger } from '../logger'; // Qual tipo de logger importar?
 
 const errorHandler = (
     err: AppError,
@@ -10,14 +10,14 @@ const errorHandler = (
     res: Response,
     next: NextFunction
 ) => {
-    logger.error(err.message, err);
+    // logger.error(err.message, err);
 
     err.statusCode ||= 500;
     err.status ||= 'error';
 
     const productionErrorResponse = {
         status: err.status,
-        statusCode: err.statusCode;
+        statusCode: err.statusCode,
         message: err.message,
         details: err.details
     };

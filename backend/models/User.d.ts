@@ -1,11 +1,12 @@
-declare class User {
-    id: number;
+import { Model } from 'mongoose';
+import { Timestamps } from './types/base.interface';
+export declare const USER = "User";
+export interface IUser extends Timestamps {
     username: string;
     email: string;
     password: string;
-    constructor(id: number, username: string, email: string, password: string);
-    static create(username: string, email: string, password: string): Promise<User>;
-    static findById(id: number): Promise<User | null>;
 }
+type UserModel = Model<IUser>;
+declare const User: UserModel;
 export default User;
 //# sourceMappingURL=User.d.ts.map

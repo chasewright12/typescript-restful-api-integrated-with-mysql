@@ -1,0 +1,1 @@
+{"version":3,"file":"session.constants.js","sourceRoot":"","sources":["session.constants.ts"],"names":[],"mappings":";;;AAAa,QAAA,mBAAmB,GAAG;IAC/B,kBAAkB,EAAE,CAAC;IACrB,kBAAkB,EAAE,GAAG;CACjB,CAAC;AAEE,QAAA,oBAAoB,GAAG;IAChC,iBAAiB,EAAE,wBAAwB;IAC3C,kBAAkB,EAAE,+BAA+B,QAAA,mBAAmB,CAAC,kBAAkB,kBAAkB;IAC3G,kBAAkB,EAAE,gCAAgC,QAAA,mBAAmB,CAAC,kBAAkB,kBAAkB;CACtG,CAAC"}

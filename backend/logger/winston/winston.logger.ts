@@ -1,4 +1,3 @@
-import 'express-async-errors';
 import 'winston-mongodb';
 import { createLogger, format, transports } from 'winston';
 import environment, { Environment } from '../../environment';
